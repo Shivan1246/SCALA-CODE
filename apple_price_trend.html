@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/d3/3.5.17/d3.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega/2.6.3/vega.min.js" charset="utf-8"></script>
+<script src="https://cdn.jsdelivr.net/webjars/org.webjars.bower/vega-lite/1.2.0/vega-lite.min.js" charset="utf-8"></script>
+<script src="https://vega.github.io/vega-editor/vendor/vega-embed.js" charset="utf-8"></script>
+  </head>
+  <body>
+ <div id='vegas-da00c285-ddb3-480b-ac28-7dd4ac986dae'></div>
+ <script>
+   var embedSpec = {
+     mode: "vega-lite",
+     spec: {
+  "mark" : "line",
+  "encoding" : {
+    "x" : {
+      "field" : "month",
+      "type" : "ordinal"
+    },
+    "y" : {
+      "field" : "price",
+      "type" : "quantitative"
+    }
+  },
+  "description" : "Apple Price Trend",
+  "data" : {
+    "values" : [
+      {
+        "month" : "Jan",
+        "price" : 1.2
+      },
+      {
+        "month" : "Feb",
+        "price" : 1.3
+      },
+      {
+        "month" : "Mar",
+        "price" : 1.25
+      },
+      {
+        "month" : "Apr",
+        "price" : 1.4
+      },
+      {
+        "month" : "May",
+        "price" : 1.55
+      },
+      {
+        "month" : "Jun",
+        "price" : 1.5
+      }
+    ]
+  }
+}
+   }
+   vg.embed("#vegas-da00c285-ddb3-480b-ac28-7dd4ac986dae", embedSpec, function(error, result) {});
+ </script>
+
+    </body>
+</html>
